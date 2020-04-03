@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+.card{
+  @apply w-auto rounded border mx-3  mb-2;
+}
+.start{
+  @apply stroke-2 stroke-current fill-current text-yellow-500  w-5 mx-1;
+}
+.change-users{
+  @apply text-gray-700;
+}
+@tailwind utilities;
