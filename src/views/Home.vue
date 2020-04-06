@@ -8,11 +8,11 @@
     <!-- <ul v-for="dato in datos" :key="dato.id">
       <li>{{ dato | tiempo(10) }}</li>
     </ul> -->
+    <Search name="star" :reviews="reviews"> </Search>
     <h3 class="text-left text-2xl pl-3 ml3 pb-5">
       Aquí puedes consultar las últimas valoraciones de los usuarios que han
       hecho sobre este producto
     </h3>
-
     <div class="flex flex-wrap w-full">
       <Card
         name="star"
@@ -26,22 +26,19 @@
 </template>
 <script>
 import Card from "@/components/Card.vue";
+import Search from "@/components/Search.vue";
 import db from "@/assets/db.json";
 export default {
   name: "home",
   components: {
-    Card
+    Card,
+    Search
   },
   data: function() {
     return {
       nombre: "jorge",
       isLoaded: false,
       reviews: db.reviews
-      // datos: [
-      //   { nombre: "Hacer la compra", tiempo: 12 },
-      //   { nombre: "Aprender Vue.js", tiempo: 5 },
-      //   { nombre: "Lavar el coche", tiempo: 22 }
-      // ]
     };
   },
   filters: {

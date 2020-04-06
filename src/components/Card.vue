@@ -4,7 +4,7 @@
   > -->
 
   <div class="w-full md:w-1/2 lg:w-1/3 ">
-    <div class=" card">
+    <div class="card">
       <div class="flex justify-start ml-2 my-4">
         <div class="inline-flex items-center text-base font-semibold">
           <div v-for="starts in 5" :key="starts">
@@ -18,9 +18,11 @@
               <use v-bind="{ 'xlink:href': '/feather-sprite.svg#' + name }" />
             </svg>
           </div>
+
           <h6 class="ml-3 text-gray-600 mt-1">{{ review.rating }}.0</h6>
         </div>
       </div>
+
       <div class="text-left ml-2 mb-3 text-gray-600">
         <span>
           {{ review.author }},
@@ -36,6 +38,7 @@
           <!-- {{ review.comment | firstLetterUppercase }} -->
         </h5>
       </div>
+
       <div class="flex ml-2 py-2">
         <button
           @click="addUser"
@@ -228,9 +231,11 @@ export default {
 
 <style scoped>
 .icon1 {
+  color: #d4af37;
   fill: white;
 }
 .icon3 {
   fill: white;
+  color: white;
 }
 </style>
