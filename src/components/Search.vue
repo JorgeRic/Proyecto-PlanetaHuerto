@@ -46,10 +46,7 @@ export default {
   components: {},
   props: {
     reviews: Array,
-    comment: String,
-    author: String,
-    date: Date,
-    rating: Number
+    comment: String
   },
   data() {
     return {};
@@ -93,14 +90,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.icon1 {
-  color: #d4af37;
-  fill: white;
-}
-.icon3 {
-  fill: white;
-  color: white;
-}
-</style>
